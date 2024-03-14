@@ -1,0 +1,44 @@
+.box {
+  padding: var(--gap);
+  border-radius: var(--gap);
+  background: var(--white);
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap);
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.mb {
+  margin-bottom: var(--gap);
+}
+
+.bg-brown {
+  background: var(--brown);
+}
+
+.bg-coffee {
+  background: var(--coffee);
+}
+
+.bg-cream {
+  background: var(--cream);
+}
+
+.bg-beige {
+  background: var(--beige);
+}
+
+.bg-white {
+  background: var(--white);
+}
+
+.container {
+  display: grid;
+  padding: var(--gap);
+  gap: var(--gap);
+}

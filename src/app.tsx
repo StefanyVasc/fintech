@@ -1,3 +1,5 @@
+import './styles/app.css'
+
 import { Header } from './components/header'
 import { Sidenav } from './components/sidenav'
 import { DataContextProvider } from './context/DataContext'

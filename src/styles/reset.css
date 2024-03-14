@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  color: var(--coffee);
+  background: var(--beige);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
