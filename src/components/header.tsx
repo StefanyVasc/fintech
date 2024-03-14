@@ -1,11 +1,10 @@
-import { useData } from '../hooks/useData'
+import { DateRange } from './input/dateRange'
 
 export function Header() {
-  const { data } = useData()
-
   return (
     <div>
       <span>Header</span>
+      <DateRange />
     </div>
   )
 }
