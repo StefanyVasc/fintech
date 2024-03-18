@@ -33,7 +33,7 @@ const DataContext = createContext<DataContextType | null>(null)
 type DataContextProviderProps = PropsWithChildren
 
 const DataContextProvider = ({ children }: DataContextProviderProps) => {
-  const [start, setStart] = useState(getNDaysAgo(15))
+  const [start, setStart] = useState(getNDaysAgo(7))
   const [finish, setFinish] = useState(getNDaysAgo(0))
 
   const { data, error, loading } = useFetch<Sale[]>(

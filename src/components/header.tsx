@@ -1,10 +1,13 @@
 import { DateRange } from './input/dateRange'
+import { Months } from './months/months'
 
 export function Header() {
   return (
-    <div>
-      <span>Header</span>
-      <DateRange />
-    </div>
+    <header className="mb">
+      <div className="mb">
+        <DateRange />
+      </div>
+      <Months />
+    </header>
   )
 }
