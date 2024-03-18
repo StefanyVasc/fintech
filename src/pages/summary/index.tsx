@@ -39,7 +39,7 @@ export function Summary() {
           </span>
         </div>
       </div>
-      <div className="box">Charts</div>
+      <div className="box mb">Charts</div>
     </section>
   )
 }

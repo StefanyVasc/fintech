@@ -8,7 +8,7 @@ import React, {
 import { useFetch } from '../hooks/useFetch'
 import { getNDaysAgo } from '../utils/transformDate'
 
-type Sale = {
+export type Sale = {
   id: string
   nome: string
   preco: number
