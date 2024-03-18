@@ -1,10 +1,8 @@
-import { useState } from 'react'
-
+import { useData } from '../../hooks/useData'
 import { DateInput } from './dateInput'
 
 export function DateRange() {
-  const [start, setStart] = useState('')
-  const [end, setEnd] = useState('')
+  const { start, finish, setFinish, setStart } = useData()
 
   return (
     <form className="box flex" onSubmit={(e) => e.preventDefault()}>
@@ -15,8 +13,8 @@ export function DateRange() {
       />
       <DateInput
         label="End"
-        value={end}
-        onChange={({ target }) => setEnd(target.value)}
+        value={finish}
+        onChange={({ target }) => setFinish(target.value)}
       />
     </form>
   )

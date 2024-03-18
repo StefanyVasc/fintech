@@ -1,6 +1,12 @@
-import React, { createContext, PropsWithChildren } from 'react'
+import React, {
+  createContext,
+  Dispatch,
+  PropsWithChildren,
+  useState,
+} from 'react'
 
 import { useFetch } from '../hooks/useFetch'
+import { getNDaysAgo } from '../utils/transformDate'
 
 type Sale = {
   id: string
@@ -16,6 +22,10 @@ type DataContextType = {
   loading: boolean
   error: string | null
   data: Sale[] | null
+  start: string
+  setStart: Dispatch<React.SetStateAction<string>>
+  finish: string
+  setFinish: Dispatch<React.SetStateAction<string>>
 }
 
 const DataContext = createContext<DataContextType | null>(null)
@@ -23,12 +33,21 @@ const DataContext = createContext<DataContextType | null>(null)
 type DataContextProviderProps = PropsWithChildren
 
 const DataContextProvider = ({ children }: DataContextProviderProps) => {
-  const { data, error, loading } = useFetch<Sale[]>(import.meta.env.VITE_URL)
+  const [start, setStart] = useState(getNDaysAgo(15))
+  const [finish, setFinish] = useState(getNDaysAgo(0))
+
+  const { data, error, loading } = useFetch<Sale[]>(
+    `${import.meta.env.VITE_URL}?inicio=${start}&final=${finish}`,
+  )
 
   const values = {
     data,
     loading,
     error,
+    start,
+    setStart,
+    finish,
+    setFinish,
   }
 
   return <DataContext.Provider value={values}>{children}</DataContext.Provider>
