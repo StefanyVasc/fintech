@@ -5,7 +5,7 @@ import * as S from './styles'
 
 export function SaleItem({ sale }: { sale: Sale }) {
   return (
-    <div style={S.SaleItemContainer} className="box">
+    <div style={S.SaleItemContainer} className="sale box">
       <NavLink to={`/sales/${sale.id}`} style={S.ItemLink}>
         {sale.id}
       </NavLink>

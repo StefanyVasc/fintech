@@ -25,7 +25,7 @@ export function Header() {
 
   return (
     <header className="mb">
-      <div style={S.dateRangeStyle} className="mb">
+      <div style={S.dateRangeStyle} className="daterange mb">
         <DateRange />
         <h1 className="box bg-cream">{title}</h1>
       </div>

@@ -9,7 +9,7 @@ export function Summary() {
 
   return (
     <section>
-      <div style={S.summaryStyle} className="flex mb">
+      <div style={S.summaryStyle} className="summary flex mb">
         <div className="box">
           <h2 style={S.summaryH2}>Sales Amount</h2>
           <span>
