@@ -9,7 +9,7 @@ import { Summary } from './pages/summary'
 export function App() {
   return (
     <DataContextProvider>
-      <div>
+      <div className="container">
         <Sidenav />
         <main>
           <Header />
