@@ -1,3 +1,4 @@
+import { Chart } from '../../components/charts'
 import { useData } from '../../hooks/useData'
 import * as S from './styles'
 
@@ -39,7 +40,9 @@ export function Summary() {
           </span>
         </div>
       </div>
-      <div className="box mb">Charts</div>
+      <div className="box mb">
+        <Chart data={data} />
+      </div>
     </section>
   )
 }

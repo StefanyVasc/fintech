@@ -28,6 +28,7 @@ const sidenavStyle: SidenavStyles = {
     fontSize: '1.125rem',
     color: 'var(--brown)',
     padding: 'var(--gap-s) 0',
+    margin: '.25rem 0',
   },
 }
 
