@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 import FintechSVG from '../../assets/FintechSVG'
 import { SidenavItem, sidenavItems } from './sidenavItems'
 import sidenavStyle from './styles'
@@ -12,9 +14,9 @@ export function Sidenav() {
             <span style={sidenavStyle.sidenavSpan}>
               <img src={item.icon} alt={item.label} />
             </span>
-            <a style={sidenavStyle.sidenavLink} href={item.link}>
+            <NavLink style={sidenavStyle.sidenavLink} to={item.to}>
               {item.label}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>

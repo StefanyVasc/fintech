@@ -8,14 +8,14 @@ import webhooks from '../../assets/icons/webhooks.svg'
 export interface SidenavItem {
   icon: string
   label: string
-  link: string
+  to: string
 }
 
 export const sidenavItems: SidenavItem[] = [
-  { icon: summary, label: 'Summary', link: '#' },
-  { icon: sales, label: 'Sales', link: '#' },
-  { icon: webhooks, label: 'Webhooks', link: '#' },
-  { icon: settings, label: 'Settings', link: '#' },
-  { icon: contact, label: 'Contact', link: '#' },
-  { icon: out, label: 'Logout', link: '#' },
+  { icon: summary, label: 'Summary', to: '/' },
+  { icon: sales, label: 'Sales', to: '/sales' },
+  { icon: webhooks, label: 'Webhooks', to: '#' },
+  { icon: settings, label: 'Settings', to: '#' },
+  { icon: contact, label: 'Contact', to: '#' },
+  { icon: out, label: 'Logout', to: '#' },
 ]

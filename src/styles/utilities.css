@@ -39,7 +39,7 @@
 
 .container {
   display: grid;
-  padding: var(--gap);
+  padding: var(--gap-s) var(--gap);
   gap: var(--gap);
   grid-template-columns: 240px auto;
 }
