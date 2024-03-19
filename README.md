@@ -1,9 +1,3 @@
- Aqui está um exemplo de README básico para o seu projeto:
-
----
-
-# Fintech
-<!-- ![logo](/src/assets/fintech.svg) -->
 <div style="text-align: center;">
   <img src="./src/assets/fintech.svg"style="display: block; margin: 20px auto;">
 </div>
